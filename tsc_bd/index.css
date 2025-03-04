@@ -1,0 +1,112 @@
+          
+            body { 
+                font-family: Arial, sans-serif; 
+                margin: 0;
+                 padding: 0;
+            
+            }
+
+            header, footer { 
+                background: #333; 
+                color: white;
+                 text-align: center; 
+                 padding: 15px; 
+                }
+                /* Logo Styling */
+            /* Logo Styling */
+            .logo {
+                max-height: 100px;  /* Set the maximum height of the logo */
+                width: auto;        /* Ensure the aspect ratio is maintained */
+            }
+
+
+
+            .home-section {
+                background: url('images/home2.jpg') no-repeat center center/cover;
+                height: 550px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                text-align: center;
+            }
+            .product-box {
+                border: 1px solid #ddd;
+                padding: 15px;
+                text-align: center;
+                border-radius: 10px;
+            }
+            .product-box img {
+                max-width: 100%;
+                height: auto;
+            }
+     /* Ensure the dropdown menu is wide and aligned properly */
+.navbar-nav .dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    min-width: 1000px; /* Adjust width */
+    padding: 20px; /* Add padding inside */
+    z-index: 1000;
+    flex-wrap: wrap; /* Prevent overflow */
+}
+/* Target only the Services dropdown */
+.navbar-nav .dropdown-menu.services-dropdown {
+    min-width: 300px !important; /* Force 500px width */
+}
+/* Style each category inside the dropdown */
+.navbar-nav .dropdown-menu .dropdown-submenu {
+    flex: 1;
+    min-width: 150px; /* Adjust width for each column */
+    padding: 0 10px;
+}
+
+/* Style category titles */
+.navbar-nav .dropdown-menu .dropdown-submenu h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Style individual dropdown items */
+.navbar-nav .dropdown-menu .dropdown-item {
+    display: block;
+    padding: 5px 0;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    text-wrap: wrap;
+}
+
+
+/* Show the dropdown on hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #3a5c6a; /* Light gray background on hover */
+    color: #e7ebf0; /* Change text color on hover */
+    cursor: pointer; /* Pointer cursor to indicate hover */
+}
+
+/* Optional: Add a smooth transition effect */
+.navbar-nav .dropdown-menu .dropdown-item {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Smooth dropdown animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
