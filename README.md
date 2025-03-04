@@ -1,0 +1,1 @@
+Disclaimer: This is a demo project created for demonstration purposes only. It is not intended for use in production environments, and no user authentication or authorization is implemented. Any data input into this project will not be securely stored and should not be considered private or protected. Please use this demo for testing or learning purposes only.
